@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 100% 'Microsoft YaHei';
+    font-size: 0.16rem;
+    text-align: center;
+    color: #595757;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+.box {
+    width: 1100px;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.text_red {
+    color: #bd2221;
+}
+
+.text_green {
+    color: #32904e;
+}
+
+.text_blue {
+    color: #004183;
+}
+
+.text_orange {
+    color: #ed6c00;
+}
+
+.text_light_blue {
+    color: #2078b6;
+}
+
+.text_light_green {
+    color: #45b035;
+}
+
+.mit_tab1 {
+    width: 100%;
+    background: url(../images/mit_1.png) center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    height: 510px;
+}
+
+.nav_logo_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: flex-start;
+    -webkit-align-items: center;
+    width: 100%;
+    margin: 5% auto 0 auto;
+}
+
+.nav_logo_box li {
+    flex-shrink: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    margin-left: 2%;
+}
+
+.nav_logo_box li:nth-child(1) {
+    margin-left: 0;
+}
+
+.nav_logo_box li img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav_logo1 {
+    width: 20%;
+}
+
+.nav_logo2 {
+    width: 15%;
+    border-left: 1px solid #8c8b8b;
+}
+
+.nav_logo_box .nav_logo2 img {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.nav_logo3 {
+    width: 20%;
+}
+
+.main_tit {
+    width: 50%;
+    margin: 2.1rem auto 0 auto;
+}
+
+.main_tit h2 {
+    font-size: 0.17rem;
+}
+
+.main_tit h1 {
+    font-size: 0.35rem;
+    margin-top: 0.5%;
+}
+
+.mit_tab2 {
+    width: 100%;
+    height: 480px;
+    background: url(../images/mit_2.png) center center no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    overflow: hidden;
+}
+
+.tab_con {
+    flex-shrink: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -webkit-flex-grow: 0;
+}
+
+.question_tab {
+    width: 40%;
+}
+
+.question_tab p {
+    margin-top: -3%;
+    margin-bottom: 10%;
+}
+
+.question_tab p:nth-child(1) {
+    margin-top: 0;
+}
+
+.question1 {
+    font-size: 0.30rem;
+    text-indent: 5%;
+}
+
+.question_tab .question2 {
+    font-size: 0.20rem;
+    text-align: right;
+}
+
+.question4 {
+    font-size: 0.25rem;
+    text-align: right;
+}
+
+.question5 {
+    font-size: 0.14rem;
+}
+
+.key_tab {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-align-items: flex-start;
+    -webkit-justify-content: flex-start;
+}
+
+.key_tab h1 {
+    margin: 3% auto;
+    text-align: left;
+    font-size: 0.25rem;
+    width: 100%;
+}
+
+.key_tab h1 strong {
+    font-size: 0.28rem;
+}
+
+.key_tab p {
+    text-align: left;
+    width: 79%;
+    line-height: 30px;
+}
+
+.key_con {
+    margin: 5% 0;
+    color: #5c5d5d;
+    font-weight: bold;
+}
+
+.mit_tab3 {
+    background: url(../images/mit_003.png) center center no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    overflow: hidden;
+}
+
+.proof {
+    margin: 3% auto;
+    font-size: 0.35rem;
+}
+
+.proof_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    margin: 3% auto;
+    width: 97%;
+}
+
+.proof_list {
+    width: 53%;
+}
+
+.proof_list p {
+    text-align: left;
+    margin-top: 5%;
+    line-height: 0.30rem;
+    display: flex;
+    flex-direction: row;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    font-size: 0.18rem;
+}
+
+.proof_list p span {
+    background: url(../images/mit_num.png) center center no-repeat;
+    background-size: contain;
+    display: block;
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    margin-right: 3%;
+}
+
+.proof_con {
+    width: 50%;
+    margin-left: 25%;
+    background: url(../images/mit_textbox.png) center center no-repeat;
+    background-size: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+
+.proof_con p {
+    font-family: 'STKaiti';
+    text-align: left;
+    text-indent: 0.25rem;
+    width: 85%;
+    margin-right: 10%;
+    font-size: 0.19rem;
+}
+
+.proof_con p:nth-child(1) {
+    margin-top: 19%;
+}
+
+.proof_con p:nth-child(2) {
+    margin-top: 6%;
+}
+
+.proof_open {
+    width: 100%;
+    padding: 0.20rem 0;
+    background: #dcdddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -webkit-flex-shrink: 0;
+    -webkit-flex-grow: 0;
+}
+
+.proof_open p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    font-size: 0.28rem;
+    letter-spacing: .125rem;
+    width: 100%;
+}
+
+.proof_open p .open {
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    width: 5%;
+    height: 0.55rem;
+    background: url(../images/mit_open.png) center center no-repeat;
+    background-size: contain;
+    margin: 0 2% 0.20rem 2%;
+}
+
+.mit_tab4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/mit_4.png) center center no-repeat;
+    background-size: contain;
+    width: 100%;
+    overflow: hidden;
+}
+
+.company_tab {
+    margin:1.10rem auto;
+}
+
+.company_tab p {
+    line-height: 0.30rem;
+}
+
+.company_contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: flex-end;
+    width: 100%;
+}
+
+.contacts h3 {
+    text-align: left;
+    font-weight: bold;
+}
+
+.contacts p {
+    text-align: left;
+    color: #5c5d5d;
+    line-height: 0.30rem;
+}
+
+.phone_con {
+    margin-top: 0.20rem;
+}
+
+.contacts p a {
+    color: #5c5d5d;
+}
+
+.edition {
+    margin-left: 10%;
+}
+
+.mit_tab5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    overflow: hidden;
+    background: url(../images/mit_5.png) center center no-repeat;
+    background-size: contain;
+}
+
+.apply {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.tit {
+    width: 25%;
+    margin: 1rem auto 0.20rem auto;
+    background: url(../images/mit_tit.png) center bottom no-repeat;
+    background-size: contain;
+    font-size: 0.30rem;
+    font-weight: bold;
+    line-height: 0.80rem;
+}
+
+.apply_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+
+.apply_list li {
+    width: 30%;
+}
+
+.apply_list li h4 {
+    font-size: 0.28rem;
+    margin: 0.30rem auto;
+    font-weight: bold;
+}
+
+.apply_list li img {
+    width: 35%;
+    height: 40%;
+    margin-bottom: 0.20rem;
+}
+
+.apply_list li p {
+    line-height: 0.30rem;
+}
+
+.check_table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+
+.check_con {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    width: 37%;
+}
+
+.check_con h4 {
+    font-size: 0.25rem;
+}
+
+.check_con h4 strong {
+    font-size: 0.35rem;
+    font-weight: normal;
+    margin:0 1%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    margin: 0.30rem auto;
+}
+
+.item img {
+    width: 50%;
+    margin: 0.20rem auto;
+}
+
+.item span {
+    font-size: 0.2rem;
+}
+
+.norm {
+    width: 65%;
+    height: 1.20rem;
+    border: 2px solid #dedede;
+    border-radius: 0.25rem;
+    margin: 0.20rem auto;
+    padding: 3%;
+    text-align: left;
+    font-size: 0.17rem;
+    line-height: 0.30rem;
+}
+
+.con_img {
+    width: 98%;
+}
+
+.con_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.goodness {
+    margin-bottom: 0.50rem;
+}
+
+.goodness_edition{
+    margin:0.30rem auto;
+}
+
+.goodness_edition h5,
+.goodness_edition p {
+    text-align: left;
+    line-height: 0.30rem;
+    text-indent: 0.30rem;
+}
+
+.goodness_edition h5 {
+    font-size: 0.25rem;
+    margin-bottom: 0.20rem;
+}
+
+.spica p {
+    background: url(../images/right.png) left center no-repeat;
+    background-size: 0.10rem;
+}
+
+.old p {
+    background: url(../images/wrong.png) left center no-repeat;
+    background-size: 0.10rem;
+}
+
+@media screen and (max-width:640px) and (min-width:320px) {
+    .box {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .mit_tab1{
+        height: 205px;
+    }
+
+    .main_tit{
+        margin-top: 90px;
+    }
+
+    .main_tit h1{
+        font-size: 0.25rem;
+    }
+
+    .mit_tab2{
+        flex-direction: column;
+        justify-content: center;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        height: 700px;
+        margin-top: 0;
+    }
+
+    .question_tab{
+        width:98%;
+        margin:0 auto;
+    }
+
+    .mit_tab3{
+        height: 600px;
+    }
+
+    .key_tab{
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        position: relative;
+        top: 90px;
+    }
+
+    .key_tab h1{
+        text-align: center;
+    }
+
+    .proof_box{
+        flex-direction: column;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -webkit-flex-direction: column;
+    }
+
+    .proof_list{
+        width:98%;
+        margin:0 auto;
+    }
+
+    .proof_con{
+        width: 98%;
+        margin:0 auto;
+    }
+
+    .company_contacts{
+        flex-direction: column;
+        justify-content: center;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+    }
+
+    .apply_list{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+
+    .apply_list li{
+        width: 40%;
+    }
+
+    .check_table{
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+
+    .check_con{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        -webkit-flex-direction: row;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        width:98%;
+        margin:20px auto;
+    }
+
+    .item span{
+        font-size: 0.16rem;
+    }
+
+    .norm{
+        height: auto;
+    }
+}
