@@ -281,7 +281,7 @@ h6 {
     width: 50%;
     margin-left: 25%;
     background: url(../images/mit_textbox.png) center center no-repeat;
-    background-size: 100%;
+    background-size: contain;
     height: 330px;
     display: flex;
     flex-direction: column;
@@ -369,32 +369,27 @@ h6 {
 }
 
 .company_tab {
-    margin:1.10rem auto;
+    margin: 0.5rem auto;
 }
 
 .company_tab p {
     line-height: 0.30rem;
 }
 
+.wechat_logo {
+    width: 1.20rem;
+    height: 1.20rem;
+}
+
 .company_contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    display: -webkit-flex;
-    -webkit-flex-direction: row;
-    -webkit-justify-content: space-between;
-    -webkit-align-items: flex-end;
     width: 100%;
 }
 
 .contacts h3 {
-    text-align: left;
     font-weight: bold;
 }
 
 .contacts p {
-    text-align: left;
     color: #5c5d5d;
     line-height: 0.30rem;
 }
@@ -405,10 +400,6 @@ h6 {
 
 .contacts p a {
     color: #5c5d5d;
-}
-
-.edition {
-    margin-left: 10%;
 }
 
 .mit_tab5 {
@@ -501,7 +492,7 @@ h6 {
 .check_con h4 strong {
     font-size: 0.35rem;
     font-weight: normal;
-    margin:0 1%;
+    margin: 0 1%;
 }
 
 .item {
@@ -550,8 +541,8 @@ h6 {
     margin-bottom: 0.50rem;
 }
 
-.goodness_edition{
-    margin:0.30rem auto;
+.goodness_edition {
+    margin: 0.30rem auto;
 }
 
 .goodness_edition h5,
@@ -582,19 +573,23 @@ h6 {
         overflow: hidden;
     }
 
-    .mit_tab1{
+    .nav_logo_box{
+        padding-left: 0.30rem;
+    }
+
+    .mit_tab1 {
         height: 205px;
     }
 
-    .main_tit{
+    .main_tit {
         margin-top: 90px;
     }
 
-    .main_tit h1{
+    .main_tit h1 {
         font-size: 0.25rem;
     }
 
-    .mit_tab2{
+    .mit_tab2 {
         flex-direction: column;
         justify-content: center;
         -webkit-flex-direction: column;
@@ -603,17 +598,17 @@ h6 {
         margin-top: 0;
     }
 
-    .question_tab{
-        width:98%;
-        margin:0 auto;
+    .question_tab {
+        width: 98%;
+        margin: 0 auto;
     }
 
-    .mit_tab3{
+    .mit_tab3 {
         height: 600px;
     }
 
-    .key_tab{
-        width:100%;
+    .key_tab {
+        width: 100%;
         justify-content: center;
         align-items: center;
         -webkit-justify-content: center;
@@ -622,64 +617,81 @@ h6 {
         top: 90px;
     }
 
-    .key_tab h1{
+    .key_tab h1 {
         text-align: center;
     }
 
-    .proof_box{
+    .proof_box {
         flex-direction: column;
         justify-content: center;
         -webkit-justify-content: center;
         -webkit-flex-direction: column;
     }
 
-    .proof_list{
-        width:98%;
-        margin:0 auto;
-    }
-
-    .proof_con{
+    .proof_list {
         width: 98%;
-        margin:0 auto;
+        margin: 0 auto;
     }
 
-    .company_contacts{
+    .proof_con {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .proof_con p{
+        font-size: 0.25rem;
+    }
+
+    .company_contacts {
         flex-direction: column;
         justify-content: center;
         -webkit-flex-direction: column;
         -webkit-justify-content: center;
     }
 
-    .apply_list{
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+    }
+
+    .contacts h3,
+    .contacts p {
+        text-align: center;
+    }
+
+    .apply_list {
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
     }
 
-    .apply_list li{
+    .apply_list li {
         width: 40%;
     }
 
-    .check_table{
+    .check_table {
         flex-direction: column;
         -webkit-flex-direction: column;
     }
 
-    .check_con{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        -webkit-flex-direction: row;
-        -webkit-justify-content: center;
-        -webkit-align-items: center;
-        width:98%;
-        margin:20px auto;
-    }
-
-    .item span{
-        font-size: 0.16rem;
-    }
-
-    .norm{
+    .norm {
         height: auto;
+    }
+
+    .goodness_edition h5,
+    .goodness_edition p {
+        text-indent: 0;
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+
+    .goodness_edition h5{
+        text-align: center;
     }
 }
