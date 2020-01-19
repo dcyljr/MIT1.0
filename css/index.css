@@ -385,6 +385,10 @@ h6 {
     width: 100%;
 }
 
+.contacts{
+    margin:0.20rem auto;
+}
+
 .contacts h3 {
     font-weight: bold;
 }
@@ -573,7 +577,7 @@ h6 {
         overflow: hidden;
     }
 
-    .nav_logo_box{
+    .nav_logo_box {
         padding-left: 0.30rem;
     }
 
@@ -638,7 +642,7 @@ h6 {
         margin: 0 auto;
     }
 
-    .proof_con p{
+    .proof_con p {
         font-size: 0.25rem;
     }
 
@@ -691,7 +695,7 @@ h6 {
         padding-left: 10px;
     }
 
-    .goodness_edition h5{
+    .goodness_edition h5 {
         text-align: center;
     }
 }
