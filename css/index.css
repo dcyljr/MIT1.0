@@ -386,7 +386,8 @@ h6 {
 }
 
 .contacts{
-    margin:0.20rem auto;
+    padding-top: 0.8rem;
+    margin-bottom: 0.10rem;
 }
 
 .contacts h3 {
