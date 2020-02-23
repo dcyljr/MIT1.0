@@ -8,7 +8,7 @@ body {
     font-size: 0.16rem;
     text-align: center;
     color: #595757;
-}　
+}
 
 a,
 li {
@@ -230,10 +230,10 @@ h6 {
     overflow: hidden;
 }
 
-.proof_tit{
-    width:98%;
-    margin:0 auto;
-    color:#bd2221;
+.proof_tit {
+    width: 98%;
+    margin: 0 auto;
+    color: #bd2221;
     font-size: 0.35rem;
     font-weight: bold;
 }
@@ -243,12 +243,17 @@ h6 {
     font-size: 0.35rem;
 }
 
-.price{
-    color:#bd2238;
-    width:50%;
-    margin:0 auto;
+.price {
+    color: #bd2238;
+    width: 100%;
+    margin: 0.1rem auto;
     font-weight: bold;
-    font-size: 0.25rem;
+    font-size: 0.18rem;
+    text-align: left;
+}
+
+.price strong{
+    color: #2078b6;
 }
 
 .proof_box {
@@ -268,8 +273,8 @@ h6 {
     width: 53%;
 }
 
-.de_inf{
-    color:#2078b6;
+.de_inf {
+    color: #2078b6;
     font-size: 0.22rem;
     font-weight: bold;
     text-align: left;
@@ -303,34 +308,13 @@ h6 {
 .proof_con {
     width: 50%;
     margin-left: 25%;
-    background: url(../images/mit_textbox.png) center center no-repeat;
-    background-size: contain;
-    height: 330px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    -webkit-justify-content: center;
-    -webkit-align-items: center;
+    height: 2.50rem;
 }
 
-.proof_con p {
-    font-family: 'STKaiti';
-    text-align: left;
-    text-indent: 0.25rem;
-    width: 85%;
-    margin-right: 10%;
-    font-size: 0.19rem;
-}
-
-.proof_con p:nth-child(1) {
-    margin-top: 19%;
-}
-
-.proof_con p:nth-child(2) {
-    margin-top: 6%;
+.proof_con img {
+    width: 90%;
+    height: 2.50rem;
+    margin: 0 auto;
 }
 
 .proof_open {
@@ -408,7 +392,7 @@ h6 {
     width: 100%;
 }
 
-.contacts{
+.contacts {
     padding-top: 0.8rem;
     margin-bottom: 0.10rem;
 }
@@ -617,17 +601,6 @@ h6 {
         font-size: 0.25rem;
     }
 
-    .product_img{
-        width:50%;
-        margin:0 auto;
-        height: 2.50rem;
-    }
-
-    .product_img img{
-        width:100%;
-        height: 2.50rem;
-    }
-
     .mit_tab2 {
         flex-direction: column;
         justify-content: center;
@@ -675,10 +648,6 @@ h6 {
     .proof_con {
         width: 98%;
         margin: 0 auto;
-    }
-
-    .proof_con p {
-        font-size: 0.25rem;
     }
 
     .company_contacts {
