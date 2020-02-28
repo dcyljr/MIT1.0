@@ -316,47 +316,198 @@ h6 {
     margin: 0 auto;
 }
 
-.wheel_body {
-    overflow: hidden;
-    height: 4rem;
+.move_banner {
+    width: 100%;
+    height: 9.0rem;
+}
+
+.more_production {
+    font-size: 0.30rem;
+    font-weight: bold;
+    color: #ed6c00;
+    text-align: center;
+    margin: 0.1rem auto;
 }
 
 .move_box {
-    margin: 0 auto;
-    width: 1100px;
-    height: 3.35rem;
-    overflow: hidden
-}
-
-.move_box_tab {
-    height: 3.35rem;
-}
-
-.btn_box {
+    width: 100%;
+    height: 8.5rem;
     position: relative;
-    bottom: 1.75rem;
+    overflow: hidden;
+}
+
+.move_circles {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     display: -webkit-flex;
     -webkit-flex-direction: row;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
 }
 
-.btn_box button{
-    border:none;
-    background: #d9d9d9;
-    opacity: 0.3;
-    width:0.5rem;
-    height: 0.5rem;
-    color:#fff;
-    font-size: 0.25rem;
-    font-weight: bold;
+.move_circles li {
+    width: 1.0rem;
+    height: 1.0rem;
+    margin-left: 0.25rem;
     cursor: pointer;
 }
 
-.move_btn{
+.move_circles li img {
+    width: 100%;
+    height: 1.0rem;
+}
+
+.move_circles li:first-child {
+    margin-left: 0;
+}
+
+.move_tab {
+    height: 3.0rem;
+    transition: 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    width: 4400px;
+    position: absolute;
+    left: 0;
+}
+
+.move_tab .move_product_con {
+    flex-grow: 0;
+    flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    width: 1100px;
+    height: 3.0rem;
+}
+
+.cli_btn {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    width: 1100px;
+    top: 4.0rem;
+    z-index: 999;
+}
+
+.button_img {
+    cursor: pointer;
     display: none;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.product_tit {
+    width: 100%;
+    margin: 0.2rem auto;
+    font-size: 0.26rem;
+    color: #2078b6;
+    font-weight: bold;
+}
+
+.products_con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    text-align: left;
+}
+
+.product_con_text,
+.tag_img {
+    flex-grow: 0;
+    flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    -webkit-flex-shrink: 0;
+}
+
+.product_con_text {
+    width: 5.80rem;
+}
+
+.tag_img {
+    width: 3.60rem;
+    height: 2.5rem;
+}
+
+.tag_img img {
+    width: 100%;
+    height: 2.50rem;
+}
+
+.tag,
+.tag_price {
+    font-size: 0.18rem;
+    font-weight: bold;
+    color: #2078b6;
+    margin: 0.10rem auto;
+}
+
+.tag_price {
+    color: #bd2221;
+}
+
+.products_con p {
+    line-height: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+}
+
+.tag_index {
+    text-indent: 0.30rem;
+}
+
+.tag_arry,
+.more_price {
+    margin-top: 0.1rem;
+}
+
+.tag_arry strong {
+    background: url(../images/mit_num.png) center center no-repeat;
+    background-size: contain;
+    flex-grow: 0;
+    flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    width: 12%;
+    height: 12%;
+    display: block;
+    margin-right: 0;
+    text-align: center;
+    font-size: 0.14rem;
+    color: #45b035;
+}
+
+.products_con .more_price {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: start;
+}
+
+.more_price strong {
+    color: #bd2221;
 }
 
 .proof_open {
@@ -657,9 +808,9 @@ h6 {
         margin: 0 auto;
     }
 
-    .mit_tab3 {
+    /* .mit_tab3 {
         height: 600px;
-    }
+    } */
 
     .key_tab {
         width: 100%;
@@ -743,5 +894,9 @@ h6 {
 
     .goodness_edition h5 {
         text-align: center;
+    }
+
+    .move_banner{
+        display: none;
     }
 }

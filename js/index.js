@@ -1,72 +1,63 @@
 window.onload = function () {
-    var prev = document.getElementById("prev");
-    var next = document.getElementById("next");
-    var moveBox = document.getElementById("move_box_tab");
-    var count = moveBox.children.length;
-    var clickCount = 1;
-    moveBox.innerHTML += moveBox.children[0].outerHTML;
-    moveBox.innerHTML = moveBox.children[count - 1].outerHTML + moveBox.innerHTML;
-    var width = parseInt(moveBox.children[0].style.width);
-    moveBox.style.marginLeft = "-" + width + "px";
-    moveBox.style.width = width * moveBox.children.length + "px";
-    var flag = true;
-    prev.onclick = function () {
-        if (flag) {
-            flag = false;
-            var left = parseFloat(moveBox.style.marginLeft);
-            clickCount--;
-            var interval = setInterval(function () {
-                left += 21;
-                if (left >= -(width * clickCount)) {
-                    if (clickCount == 0) {
-                        clickCount = count;
-                        left = -width * count;
-                    } else {
-                        left = -(width * clickCount);
-                    }
-                    moveBox.style.marginLeft = left + "px";
-                    clearInterval(interval);
-                    flag = true;
-                } else {
-                    moveBox.style.marginLeft = left + "px";
-                }
-            });
-        }
-    };
-    next.onclick = function () {
-        if (flag) {
-            flag = false;
-            var left = parseFloat(moveBox.style.marginLeft);
-            clickCount++;
-            var interval = setInterval(function () {
-                left -= 21;
-                if (left <= -(width * clickCount)) {
-                    if (clickCount == count + 1) {
-                        clickCount = 1;
-                        left = "-" + width;
-                    } else {
-                        left = -(width * clickCount);
-                    }
-                    moveBox.style.marginLeft = left + "px";
-                    clearInterval(interval);
-                    flag = true;
-                } else {
-                    moveBox.style.marginLeft = left + "px";
-                }
-            });
-        }
-    };
-    var touch = document.getElementById('touch');
-    var cliclBtn = document.getElementById('clibtn');
-    var moveBtn = cliclBtn.querySelectorAll('.move_btn');
-    touch.onmouseover = function () {
-        for (var i = 0; i < moveBtn.length; i++) {
-            moveBtn[i].style.display = 'block';
-        }
+    var prev = document.getElementById('prev');
+    var next = document.getElementById('next');
+    var multiTab = document.getElementById('multi_tab');
+    var circles = document.getElementById('multi_circles').getElementsByTagName('li');
+    var moveBox = document.getElementById('movebox');
+    var currentIndex = 0;
+    var preIndex = 0;
+    var timer = null;
+    prev.addEventListener('click',preMove);
+    next.addEventListener('click',nextMove);
+    for(var i=0;i<circles.length;i++){
+        circles[i].setAttribute('id',i);
+        circles[i].addEventListener('mouseenter',overCircle);
     }
-    touch.onmouseout = function () {
-        for (var z = 0; z < moveBtn.length; z++) {
-            moveBtn[z].style.display = 'none';
-        }
+    moveBox.addEventListener('mouseover',function(){
+        prev.style.display='block';
+        next.style.display='block';
+    });
+    moveBox.addEventListener('mouseout',function(){
+        prev.style.display='none';
+        next.style.display='none';
+    });
+    changeCircleColor(preIndex,currentIndex);
+    function overCircle(){
+        preIndex=currentIndex;
+        currentIndex=parseInt(this.id);
+        changeCircleColor(preIndex,currentIndex);
+        moveBanner();
     }
+
+    function changeCircleColor(preIndex,currentIndex){
+        circles[preIndex].style.border='none';
+        circles[currentIndex].style.border='1px solid #bd2238';
+    }
+
+    function preMove(){
+        preIndex=currentIndex;
+        if(currentIndex!=0){
+            currentIndex--;
+        }else{
+            currentIndex=3;
+        }
+        changeCircleColor(preIndex,currentIndex);
+        moveBanner();
+    }
+
+    function nextMove(){
+        preIndex=currentIndex;
+        if(currentIndex!=3){
+            currentIndex++;
+        }else{
+            currentIndex=0;
+        }
+        changeCircleColor(preIndex,currentIndex);
+        moveBanner();
+    }
+
+    function moveBanner(){
+        multiTab.style.left=-currentIndex*1100+'px';
+    }
+
 }
