@@ -6,7 +6,6 @@ window.onload = function () {
     var moveBox = document.getElementById('movebox');
     var currentIndex = 0;
     var preIndex = 0;
-    var timer = null;
     prev.addEventListener('click',preMove);
     next.addEventListener('click',nextMove);
     for(var i=0;i<circles.length;i++){
