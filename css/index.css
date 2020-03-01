@@ -369,9 +369,29 @@ h6 {
     border: 2px solid #8c8b8b;
 }
 
-.transform_div img {
+.transform_div .banner_img {
     width: 100%;
     height: 1.5rem;
+}
+
+.move_banner1{
+    background: url(../images/order_img2.png) center center no-repeat;
+    background-size: cover;
+}
+
+.move_banner2{
+    background: url(../images/order_img3.png) center center no-repeat;
+    background-size: cover;
+}
+
+.move_banner3{
+    background: url(../images/order_img4.png) center center no-repeat;
+    background-size: cover;
+}
+
+.move_banner4{
+    background: url(../images/order_img5.png) center center no-repeat;
+    background-size: cover;
 }
 
 .transform_div h4,
@@ -382,6 +402,7 @@ h6 {
 .transform_div h4 {
     color: #2078b6;
     margin: 0.2rem auto;
+    text-align: left;
 }
 
 .transform_div p{
@@ -485,13 +506,13 @@ h6 {
 }
 
 .tag_img {
-    width: 3.60rem;
+    width: 4.60rem;
     height: 2.5rem;
 }
 
 .tag_img img {
     width: 100%;
-    height: 2.50rem;
+    height: 3.2rem;
 }
 
 .tag,
