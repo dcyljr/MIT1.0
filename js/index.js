@@ -2,7 +2,8 @@ window.onload = function () {
     var prev = document.getElementById('prev');
     var next = document.getElementById('next');
     var multiTab = document.getElementById('multi_tab');
-    var circles = document.getElementById('multi_circles').getElementsByTagName('li');
+    var circles = document.getElementById('multi_circles').getElementsByClassName('transform_div');
+    // var circlesBox=document.getElementById('multi_circles').getElementsByTagName('li');
     var moveBox = document.getElementById('movebox');
     var currentIndex = 0;
     var preIndex = 0;
@@ -29,8 +30,8 @@ window.onload = function () {
     }
 
     function changeCircleColor(preIndex,currentIndex){
-        circles[preIndex].style.border='none';
-        circles[currentIndex].style.border='1px solid #bd2238';
+        circles[preIndex].style.border='2px solid #8c8b8b';
+        circles[currentIndex].style.border='2px solid #bd2238';
     }
 
     function preMove(){
