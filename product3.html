@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/icon.jpg">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>免疫图谱分析</title>
+    <script type="text/javascript">
+        ! function (n) {
+            var e = n.document,
+                t = e.documentElement,
+                i = 640,
+                d = i / 100,
+                o = "orientationchange" in n ? "orientationchange" : "resize",
+                a = function () {
+                    var n = t.clientWidth || 320;
+                    n > 640 && (n = 640),
+                        t.style.fontSize = n / d + "px"
+                };
+            e.addEventListener && (n.addEventListener(o, a, !1), e.addEventListener("DOMContentLoaded", a, !1))
+        }(window);
+    </script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div class="move_product_con">
+        <div class="tag_img tag_banner3">
+            <!-- <img src="./images/order_img4.png" alt=""> -->
+        </div>
+        <h2 class="product_tit">免疫图谱分析</h2>
+        <div class="products_con">
+            <div class="product_con_text">
+                <h3 class="tag">产品简介</h3>
+                <p class="tag_index">
+                    当人体处于疾病或亚健康状态下，免疫系统（特别是重要的免疫细胞——T细胞）的状态会发生巨大的变化，是的免疫功能大幅下降。此时免疫系统功能会发生巨大变化，出现对外来病原的精细识别能力降低，免疫应答紊乱、低效甚至无效，使免疫系统的三大功能（防御、监视、稳定）失调或减弱，最终导致感染性疾病、自身免疫性疾病及癌症的发生率明显增加。因此，了解自身免疫系统和健康状态十分重要。
+                </p>
+                <p class="tag_index">免疫图谱分析是利用高通量测序技术来分析人的外周血或组织中B细胞的BCR序列或者T细胞的TCR序列，对疾病进行早期诊断筛查。
+                </p>
+                <p class="tag_index">
+                    人体内的B和T淋巴细胞是获得性免疫系统中两类重要的细胞。通过高通量基因测序的方法来分析BCR或者TCR基因的免疫图谱，可以分析B或者T细胞的功能。</p>
+                <p class="tag_index">在儿童、患有长期慢性感染的病人或者老年人中，BCR 和 TCR
+                    基因多样性也可能发生改变。因此，利用BCR和TCR免疫图谱分析，可以用来评估受试者的免疫力。
+                    免疫图谱分析目前还只能作为技术服务手段帮助医生和客户发现免疫系统的异常，但还不能作为疾病的诊断标准。</p>
+                <h3 class="tag_price">产品价格：</h3>
+                <p class="more_price">免疫图谱分析：<strong>6000元/人</strong></p>
+            </div>
+        </div>
+        <div class="show_shop_code">
+            <button class="cli_code" id="showcode">购买</button>
+        </div>
+        <div class="wx_code" id="wx_code">
+            <div class="closewin">
+                <img src="./images/close.png" alt="" class="close_code" id="hidecode">
+            </div>
+            <img src="./images/mit_wechat.jpg" alt="" class="code">
+        </div>
+    </div>
+</body>
+
+</html>

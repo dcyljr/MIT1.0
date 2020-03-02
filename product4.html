@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/icon.jpg">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        ! function (n) {
+            var e = n.document,
+                t = e.documentElement,
+                i = 640,
+                d = i / 100,
+                o = "orientationchange" in n ? "orientationchange" : "resize",
+                a = function () {
+                    var n = t.clientWidth || 320;
+                    n > 640 && (n = 640),
+                        t.style.fontSize = n / d + "px"
+                };
+            e.addEventListener && (n.addEventListener(o, a, !1), e.addEventListener("DOMContentLoaded", a, !1))
+        }(window);
+    </script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div class="move_product_con">
+        <div class="tag_img tag_banner4">
+            <!-- <img src="./images/order_img5.png" alt=""> -->
+        </div>
+        <h2 class="product_tit">结核杆菌耐药全基因组测序</h2>
+        <div class="products_con">
+            <div class="product_con_text">
+                <h3 class="tag">产品简介</h3>
+                <p class="tag_index">
+                    全球有20亿人感染结核分枝杆菌—MTB，每年有860万人发生急性肺结核（TB），130万人死于该病。结核病是仅次于HIV的传染病，是人类死亡最多的传染病。1/3的艾滋病患者也感染了肺结核。活性MTB是一种高度传染性的空气传播疾病，主要为肺部感染。耐多药结核病诊断进展缓慢，患病的病人中只有五分之一得到诊断。
+                </p>
+                <p class="tag_index"> 高通量测序通过检测结核杆菌耐药的全基因组，深入分析个体耐药机制和耐药情况，达到快速诊断、精准治疗的目的。</p>
+                <h3 class="tag">与传统耐药检测手段相比、高通量测序具有以下的特性：</h3>
+                <p class="tag_arry"><strong>1</strong>在2周内完成MDR/XDR-TB的诊断药敏并指导设计合理的治疗方案。</p>
+                <p class="tag_arry"><strong>2</strong>不依赖探针的诊断，其它分子诊断技术在靶标缺失时或靶标有混合时检测失败。</p>
+                <p class="tag_arry"><strong>3</strong>检测全面，内容包含所有其它分子诊断技术的结果。</p>
+                <p class="tag_arry"><strong>4</strong>同时检测二线药物的耐药。</p>
+                <p class="tag_arry"><strong>5</strong>可鉴定异质性耐药，不同亚型的混合感染。</p>
+                <p class="tag_arry">
+                    <strong>6</strong>分枝杆菌生长缓慢，完整的表型药敏检测会消耗大量的资源（设备、人力等），WGS检测通量足够大，在输出全面的检测结果同时节约大量的实验室设备及人力资源。
+                </p>
+                <p class="tag_arry"><strong>7</strong>患者病情的复发，“二次感染”及“旧病复发”的区分鉴定。</p>
+                <h3 class="tag_price">产品价格：</h3>
+                <p class="more_price">结核杆菌耐药全基因组测序：<strong>5600元/样本</strong></p>
+            </div>
+        </div>
+        <div class="show_shop_code">
+            <button class="cli_code" id="showcode">购买</button>
+        </div>
+        <div class="wx_code" id="wx_code">
+            <div class="closewin">
+                <img src="./images/close.png" alt="" class="close_code" id="hidecode">
+            </div>
+            <img src="./images/mit_wechat.jpg" alt="" class="code">
+        </div>
+    </div>
+</body>
+
+</html>
