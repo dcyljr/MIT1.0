@@ -1063,6 +1063,15 @@ h6 {
         padding: 0.5rem;
     }
 
+    .transform_text{
+        height: auto;
+    }
+
+    .details{
+        width:40%;
+        height: 35%;
+    }
+
     .transform_div .banner_img {
         height: 4rem;
     }
