@@ -611,9 +611,9 @@ h6 {
 
 .code_win {
     width: 2.5rem;
-    height: 3rem;
-    background: #37b9e9;
-    background-image: linear-gradient(0deg, #37b9e9, #84bfbd);
+    height: 2.7rem;
+    background: #fff;
+    /* background-image: linear-gradient(0deg, #37b9e9, #84bfbd); */
     border-radius: 9%;
     display: flex;
     flex-direction: column;
@@ -627,7 +627,7 @@ h6 {
 
 .code_win h3 {
     font-size: 0.18rem;
-    color: #fff;
+    color: #000;
     margin: 0.1rem auto;
 }
 
