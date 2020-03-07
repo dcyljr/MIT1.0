@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 1rem;
     color: #000;
     font-weight: normal;
     font-family: 'Microsoft YaHei';
+}
+html {
+    font-size: 12px;
 }
 
 li,
@@ -23,40 +25,29 @@ a {
     .payment {
         width: 100%;
         height: auto;
-        /* margin: 1.875rem auto; */
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: -webkit-flex;
-        -webkit-flex-direction: column;
-        -webkit-justify-content: center;
-        -webkit-align-items: center;
     }
 
     .payment img {
-        width: 40%;
-        margin: 0 auto 1.25rem auto;
+        width: 25%;
+        margin: 6.25rem auto 1.25rem auto;
     }
 
     .payment p {
-        font-size: 1.5625rem;
+        font-size: 1.4375rem;
         line-height: 2.5rem;
     }
 
     .phone {
-        margin-top: 2.5rem;
+        margin-top: 10%;
     }
 
     .official_account {
-        /* margin-top: 4.375rem; */
-        position: relative;
-        top: 16%;
+        margin-top: 55%;
     }
 
     .official_account p {
