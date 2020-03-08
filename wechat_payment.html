@@ -7,6 +7,16 @@
     <title>Payment</title>
     <link rel="icon" type="image/x-icon" href="./images/icon.jpg">
     <link rel="stylesheet" href="./css/payment.css">
+    <script type="text/javascript">
+        var fontSizeAuto = function () {
+            var viewportWidth = document.documentElement.clientWidth;
+            if (viewportWidth > 640) { viewportWidth = 640; }
+            if (viewportWidth < 320) { viewportWidth = 320; }
+            document.documentElement.style.fontSize = viewportWidth / 6.4 + 'px';
+        }
+        fontSizeAuto();
+        window.onresize = fontSizeAuto;
+    </script>
 </head>
 
 <body>
